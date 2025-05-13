@@ -3,12 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Plan Métro Rouen</title>
+  <title>Plan Tram Rouen</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>🚋 Plan du Métro - Rouen</h1>
-
+  <h1>🚋 Plan du Tram - Rouen</h1>
   <div class="ligne">
     <!-- Tronc commun -->
     <div class="arret" onclick="afficherInfo('Boulingrin')">● Boulingrin</div>
@@ -24,17 +23,31 @@
     <div class="arret" onclick="afficherInfo('Honoré de Balzac')">● Honoré de Balzac</div>
     <div class="arret" onclick="afficherInfo('Voltaire')">● Voltaire</div>
     <div class="arret" onclick="afficherInfo('Garibaldi')">● Garibaldi</div>
+    <div class="arret" onclick="afficherInfo('H. D. V. Sotteville')">● H. D. V. Sotteville</div>
+    <div class="arret" onclick="afficherInfo('14 Juillet')">● 14 Juillet</div>
+    <div class="arret" onclick="afficherInfo('Jean Zay')">● Jean Zay</div>
+    <div class="arret" onclick="afficherInfo('Toit Familial')">● Toit Familial</div>
+    <div class="arret" onclick="afficherInfo('Champ de Courses')">● Champ de Courses</div>
+    <div class="arret" onclick="afficherInfo('Ernest Renan')">● Ernest Renan</div>
+    <div class="arret" onclick="afficherInfo('Le Parc')">● Le Parc</div>
+    <div class="arret" onclick="afficherInfo('Maryse Bastié')">● Maryse Bastié</div>
     <div class="arret" onclick="afficherInfo('Technopôle')">● Technopôle</div>
 
-    <!-- Branche MB (vers Georges Braque) -->
+    <!-- Branche MB (vers Georges Braques) -->
     <div class="arret" onclick="afficherInfo('Avenue de Caen')">● Avenue de Caen</div>
     <div class="arret" onclick="afficherInfo('Jean Jaurès')">● Jean Jaurès</div>
     <div class="arret" onclick="afficherInfo('François Truffaut')">● François Truffaut</div>
     <div class="arret" onclick="afficherInfo('Place du 8 Mai')">● Place du 8 Mai</div>
+    <div class="arret" onclick="afficherInfo('Saint Julien')">● Saint Julien</div>
+    <div class="arret" onclick="afficherInfo('Charles de Gaulle')">● Charles de Gaulle</div>
+    <div class="arret" onclick="afficherInfo('Provinces')">● Provinces</div>
+    <div class="arret" onclick="afficherInfo('J-F Kennedy')">● J-F Kennedy</div>
+    <div class="arret" onclick="afficherInfo('Léon Blum')">● Léon Blum</div>
+    <div class="arret" onclick="afficherInfo('Paul Cézanne')">● Paul Cézanne</div>
     <div class="arret" onclick="afficherInfo('Georges Braques')">● Georges Braques</div>
   </div>
 
-  <div id="info" class="popup">Cliquez sur un arrêt pour voir les horaires</div>
+  <div id="info" class="popup">Clique sur un arrêt pour voir les horaires</div>
 
   <script>
     function afficherInfo(nom) {
