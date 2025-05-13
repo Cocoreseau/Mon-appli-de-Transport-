@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plan Métro Rouen</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🚋 Plan du Métro - Rouen</h1>
+
+  <div class="ligne">
+    <!-- Tronc commun -->
+    <div class="arret" onclick="afficherInfo('Boulingrin')">● Boulingrin</div>
+    <div class="arret" onclick="afficherInfo('Beauvoisine')">● Beauvoisine</div>
+    <div class="arret" onclick="afficherInfo('Gare Rue Verte')">● Gare Rue Verte</div>
+    <div class="arret" onclick="afficherInfo('Palais de Justice - Gisèle Halimi')">● Palais de Justice - Gisèle Halimi</div>
+    <div class="arret" onclick="afficherInfo('Théâtre des Arts')">● Théâtre des Arts</div>
+    <div class="arret" onclick="afficherInfo('Joffre Mutualité')">● Joffre Mutualité</div>
+    <div class="arret" onclick="afficherInfo('Saint Sever')">● Saint Sever</div>
+    
+    <!-- Branche MT (vers Technopôle) -->
+    <div class="arret" onclick="afficherInfo('Europe')">● Europe</div>
+    <div class="arret" onclick="afficherInfo('Honoré de Balzac')">● Honoré de Balzac</div>
+    <div class="arret" onclick="afficherInfo('Voltaire')">● Voltaire</div>
+    <div class="arret" onclick="afficherInfo('Garibaldi')">● Garibaldi</div>
+    <div class="arret" onclick="afficherInfo('Technopôle')">● Technopôle</div>
+
+    <!-- Branche MB (vers Georges Braque) -->
+    <div class="arret" onclick="afficherInfo('Avenue de Caen')">● Avenue de Caen</div>
+    <div class="arret" onclick="afficherInfo('Jean Jaurès')">● Jean Jaurès</div>
+    <div class="arret" onclick="afficherInfo('François Truffaut')">● François Truffaut</div>
+    <div class="arret" onclick="afficherInfo('Place du 8 Mai')">● Place du 8 Mai</div>
+    <div class="arret" onclick="afficherInfo('Georges Braques')">● Georges Braques</div>
+  </div>
+
+  <div id="info" class="popup">Cliquez sur un arrêt pour voir les horaires</div>
+
+  <script>
+    function afficherInfo(nom) {
+      document.getElementById('info').innerText = `Prochain tram à ${new Date().toLocaleTimeString()} vers ${nom}`;
+    }
+  </script>
+</body>
+</html>
