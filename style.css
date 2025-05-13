@@ -16,6 +16,11 @@ h1 {
   margin-right: 10px;
 }
 
+.header {
+  text-align: center; /* Centre le texte */
+  margin-top: 50px;   /* Un peu d'espace au-dessus */
+}
+
 .ligne {
   margin-top: 20px;
   border-left: 5px solid #0077cc;
